@@ -1,4 +1,4 @@
-#!/usr/bin/ansisop
+#!./CONSOLA
 begin
 #un vector de 5 posiciones
 variables a, b, c, d, e, i

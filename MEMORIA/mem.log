@@ -1,0 +1,19 @@
+TABLA ESTADO TLB:
+==================
+NRO TLB     PID      NRO PAGINA      NRO MARCO     REFERENCIADA
+0           PID1     6               0             2
+1           PID1     13               1             3
+2           PID1     3               2             2
+
+TABLA ESTADO PROGRAMAS:
+=======================
+PID      CANT. MARCOS
+PID1     3
+
+TABLA ESTADO MARCOS:
+====================
+NRO MARCO     PID      NRO PAGINA      USADA      MODIFICADA
+0             PID1     6               0          0
+1             PID1     13               0          1
+2             PID1     3               1          0
+
