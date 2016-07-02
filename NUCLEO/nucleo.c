@@ -786,7 +786,7 @@ void hilo_para_un_io(NucleoIo* nucleoio){
 
 	//Si el IO esta siendo usado en ese momento se bloquea el hilo.
 	pthread_mutex_lock(&io->MUTEX);
-	int tiempo_total_retardo = (io->io_sleep * pidblock->CANTIDAD_IO) * 10000; //por 10000 xq el valor esta en mili segundos
+	int tiempo_total_retardo = (io->io_sleep * pidblock->CANTIDAD_IO) * 1000; //por 10000 xq el valor esta en mili segundos
 	printf("\nSe ejecuta en hilo %s con cantidad de %d con tiempo total %d\n",io->io_id,pidblock->CANTIDAD_IO,tiempo_total_retardo);
 	usleep(tiempo_total_retardo);
 	pthread_mutex_unlock(&io->MUTEX);
