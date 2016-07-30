@@ -3,53 +3,59 @@
 ################################################################################
 
 # Add inputs and outputs from these tool invocations to the build variables 
-O_SRCS += \
-../ansisop.o \
-../bitmap.o \
-../direccion.o \
-../file.o \
-../log.o \
-../main.o \
-../programa.o \
-../programas.o \
-../servidor.o \
-../swap.o 
-
 C_SRCS += \
 ../ansisop.c \
-../bitmap.c \
+../cpu.c \
+../cpus.c \
 ../direccion.c \
-../file.c \
+../interprete.c \
 ../log.c \
 ../main.c \
+../marco.c \
+../marcos.c \
+../memoria.c \
 ../programa.c \
 ../programas.c \
 ../servidor.c \
-../swap.c 
+../tlb.c \
+../tlbs.c \
+../util.c 
 
 OBJS += \
 ./ansisop.o \
-./bitmap.o \
+./cpu.o \
+./cpus.o \
 ./direccion.o \
-./file.o \
+./interprete.o \
 ./log.o \
 ./main.o \
+./marco.o \
+./marcos.o \
+./memoria.o \
 ./programa.o \
 ./programas.o \
 ./servidor.o \
-./swap.o 
+./tlb.o \
+./tlbs.o \
+./util.o 
 
 C_DEPS += \
 ./ansisop.d \
-./bitmap.d \
+./cpu.d \
+./cpus.d \
 ./direccion.d \
-./file.d \
+./interprete.d \
 ./log.d \
 ./main.d \
+./marco.d \
+./marcos.d \
+./memoria.d \
 ./programa.d \
 ./programas.d \
 ./servidor.d \
-./swap.d 
+./tlb.d \
+./tlbs.d \
+./util.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

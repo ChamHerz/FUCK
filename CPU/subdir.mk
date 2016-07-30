@@ -3,53 +3,29 @@
 ################################################################################
 
 # Add inputs and outputs from these tool invocations to the build variables 
-O_SRCS += \
-../ansisop.o \
-../bitmap.o \
-../direccion.o \
-../file.o \
-../log.o \
-../main.o \
-../programa.o \
-../programas.o \
-../servidor.o \
-../swap.o 
-
 C_SRCS += \
-../ansisop.c \
-../bitmap.c \
+../cliente.c \
+../cpu.c \
 ../direccion.c \
-../file.c \
-../log.c \
 ../main.c \
-../programa.c \
-../programas.c \
-../servidor.c \
-../swap.c 
+../pcb.c \
+../primitivas.c 
 
 OBJS += \
-./ansisop.o \
-./bitmap.o \
+./cliente.o \
+./cpu.o \
 ./direccion.o \
-./file.o \
-./log.o \
 ./main.o \
-./programa.o \
-./programas.o \
-./servidor.o \
-./swap.o 
+./pcb.o \
+./primitivas.o 
 
 C_DEPS += \
-./ansisop.d \
-./bitmap.d \
+./cliente.d \
+./cpu.d \
 ./direccion.d \
-./file.d \
-./log.d \
 ./main.d \
-./programa.d \
-./programas.d \
-./servidor.d \
-./swap.d 
+./pcb.d \
+./primitivas.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
