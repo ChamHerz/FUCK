@@ -1,0 +1,112 @@
+PROTOCOLO DE COMUNICACION
+
+    01 - Solicitud de conexion desde Consola a Nucleo
+    02 - Conexion aceptada desde Nucleo a Consola
+    03 - Solicitud de PING desde Consola a Nucleo
+    04 - Respuesta de PING desde Nucleo a Consola
+    05 - Solicitud de SEND desde Consola a Nucleo
+    06 - Respuesta de listo para el SEND desde Nucleo a Consola
+    07 - Solicitud de conexion desde CPU a Nucleo
+    08 - Conexion aceptada desde CPU a Consola
+    09 - Solicitud de SEND desde Nucleo a Primer CPU conectado
+    10 - Respuesta de listo para el SEND desde CPU a Nucleo
+    11 - Solicitud de SEND-CPU desde Consola a Nucleo
+    12 - Respuesta de listo para el SEND-CPU desde Nucleo a Consola
+    13 - Solicitud de conexion desde CPU a Memoria
+    14 - Conexion aceptada desde Memoria a CPU
+    15 - Solicitud de SEND desde CPU a Memoria
+    16 - Respuesta de listo para el SEND desde Memoria a CPU
+    17 - Solicitud de conexion desde Memoria a Swap
+    18 - Conexion aceptada desde Swap a Memoria
+    19 - Solicitud de SEND desde Memoria a SWAP
+    20 - Respuesta de listo para el SEND desde Swap a Memoria
+    21 - Solicitud de envio de AnSISOP desde Consola al Nucleo
+    22 - Respuesta de listo para el AnSISOP desde Nucleo a Consola
+    23 - Solicitud de envio de AnSISOP desde Nucleo a Memoria
+    24 - Respuesta de listo para el AnSISOP desde Memoria a Nucleo
+    25 - Solicitud de envio de AnSIOP desde Memoria a Swap
+    26 - Respuesta de "Listo para el AnSISOP" desde Swap a Nucleo
+    27 - Solicitud de envio de PCB desde el Nucleo al CPU
+    28 - Respuesta de "listo para el PCB" desde CPU a Nucleo
+    29 - Solicitud de "envio de Direccion" desde CPU a Memoria
+    30 - Respuesta de "listo para la Direccion: desde Memoria a CPU
+    31 - Solicitud de "envio de Direccion" desde Memoria a Swap
+    32 - Respuesta de "listo para la Direccion: desde Swap a Memoria
+    33 - Solicitud de "MARCO_SIZE" de Memoria a Swap
+    34 - Respuesta de la solicitud de MARCO_SIZE desde Swap a Memoria
+    35 - Solicitud de "envio de Direccion con buffer" desde CPU a Memoria
+    36 - Respuesta de "Listo para recibir con buffer" desde Memoria a CPU
+    37 - Solicitud de "Finalizar Programa" desde CPU a Nucleo
+    38 - Respuesta de "Finalizar Programa" desde Nucleo a CPU
+    39 - Solicitud de "Ejecutar Wait" desde CPU a Nucleo
+    40 - Respuesta de "Ejecutar Wait" desde Nucleo a CPU (Se prepara para recibir el Char Semaf.)
+    41 - La ejecucion del wait del semaforo dio Menor a 0 -> Bloquear Proceso
+    42 - La ejecucion del wait del semaforo dio mayor o igual 0 -> No Bloquear Proceso
+    43 - Solicitud de "Enviar PCB" desde CPU al Nucleo
+    44 - Respueta de "Enviar PCB" desde Nucleo al CPU
+    45 - Solicitud de "Valor de Variable Global" desde CPU a Nucleo
+    46 - Respuesta de "Valor de Variable Global" desde Nucleo a CPU
+    47 - Solicitud de ejecucion de signal desde CPU a Nucleo
+    48 - Respuesta de ejecucion de signal desde Nucleo a CPU
+    49 - Respuesta de Semaforo Signal ejecutado
+    50 - Solicitud de Modificacion de Variable Global desde CPU a Nucleo
+    51 - Respuesta de Modificacion de Variable Global desde Nucleo a CPU
+    52 - Solicitud de Imprimir Valor desde CPU a Nucleo
+    53 - Respuesta de Imprimir Valor desde Nucleo a CPU
+    54 - Solicitud de Imprimir Valor desde Nucleo a Consola (No espera respuesta)
+    55 - Avisar a Memoria que se borre un Programa
+    56 - Avisar a Memoria que debe borrar la TLB desde Nucleo a Memoria
+    57 - Avisar a Swap que debe borrar un programa (desde Memoria a Swap)
+    58 - Solicitud de Ejecucion de IO desde CPU a Nucleo
+    59 - Respuesta de Ejecucion de IP desde Nucleo a CPU
+    60 - Solicitud de ImprimirTexto desde CPU a Nucleo
+    61 - Respuesta de ImprimirTexto desde Nucleo a CPU
+    62 - Solicitud de ImprimirTexto desde Nucleo a Consola (No espera respuesta)
+    63 ? Solicitud de "envio de Direccion" desde Memoria a Swap para Almacenar
+    64 ? Respuesta de "listo para la Direccion: desde Swap a Memoria para Almacenar
+    65 - Aviso a consola que "fin de programa"
+    66 - Solicitud de "Cierre por SISGUR1" desde CPU a NUCLEO
+    67 - Respuesta de "Cierre por SISGUR1" desde NUCLEO a CPU (Despues que evite eliminar el PID)
+    68 - Avisar que No hay espacio en Swap, no se ejecuta programa, desde NUCLEO a CONSOLA
+    69 - Avisar a Memoria que le voy a enviar el AnsisopSize desde NUCLEO a MEMORIA
+    70 - Avisar a Swap que le voy a mandar el Size del Ansisop, de MEMORIA a SWAP
+    71 - SWAP avisa que tiene lugar para el Ansisop, desde Swap a Memoria
+    72 - SWAP avisa que NO tiene lugar para el Ansisop, desde Swap a Memoria
+    73 - MEMORIA avisa a Nucleo que entra el Ansisop en swap, Asignar PID
+    74 - MEMORIA avisa a Nucleo que NO entra el Ansisop en swap, NO Asignar PID
+    75 - Avisar que hay espacio en Swap, se ejecuta programa, desde NUCLEO a CONSOLA
+
+100 - Consola solicita enfio enviara el size y la cadena al Nucleo
+101 - El nucleo avisa a consola que envie el size del ansisop
+102 - El nucleo avisa que el archivo se puede cargar normalmente
+103 - El nucleo avisa que se necesita coompactar
+104 - El nucleo avisa que el ansisop no entra en el swap
+105 - El nucleo avisa que se termino de compactar.
+106 - SWAP avisa que se debe compactar.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

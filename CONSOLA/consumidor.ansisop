@@ -1,0 +1,14 @@
+#!/home/utnso/Repo/Pri_404/CONSOLA
+begin	
+	:etiqueta
+	
+	wait c
+		print !colas
+	signal b
+	
+	#Ciclar indefinidamente
+	goto etiqueta
+
+end
+
+

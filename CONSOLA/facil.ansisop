@@ -1,0 +1,8 @@
+#!/home/utnso/Repo/Pri_404/CONSOLA
+begin
+	variables a, b
+	a = 3
+	b = 5
+	a = b + 12
+	print a
+end
